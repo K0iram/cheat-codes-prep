@@ -234,14 +234,12 @@ export const navigation: Array<NavGroup> = [
     title: 'Home',
     links: [
       { title: 'About', href: '/' },
-      { title: 'Quickstart', href: '/quickstart' },
     ],
   },
   {
     title: 'Challenges',
     links: [
       { title: 'De-duplicate an array', href: '/dedup' },
-      { title: 'Quickstart', href: '/quickstart' },
     ],
   }
 ]
