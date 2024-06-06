@@ -1,46 +1,45 @@
-# Protocol
+# Cheat Codes Prep
 
-Protocol is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+## Overview
+Cheat Codes Prep is a web application designed to help developers prepare for JavaScript-based technical interviews. It provides a collection of common interview questions along with detailed explanations and example solutions.
 
-## Getting started
+## Features
+- **Interview Questions**: A variety of JavaScript interview questions covering different topics.
+- **Example Solutions**: Detailed solutions to help understand the approach to solving each question.
+- **Guides and Resources**: Additional guides and resources to aid in interview preparation.
 
-To get started with this template, first install the npm dependencies:
+## Getting Started
+### Prerequisites
+- Node.js
+- npm
 
-```bash
-npm install
-```
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/cheat-codes-prep.git
+   cd cheat-codes-prep
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-Next, run the development server:
-
-```bash
-npm run dev
-```
-
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
-
-## Global search
-
-This template includes a global search that's powered by the [FlexSearch](https://github.com/nextapps-de/flexsearch) library. It's available by clicking the search input or by using the `⌘K` shortcut.
-
-This feature requires no configuration, and works out of the box by automatically scanning your documentation pages to build its index. You can adjust the search parameters by editing the `/src/mdx/search.mjs` file.
+### Running the App
+- Development mode:
+  ```sh
+  npm run dev
+  ```
+- Production build:
+  ```sh
+  npm run build
+  npm start
+  ```
 
 ## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+## Author
+Mario Kavouras, Frontend Software Engineer with over 6 years of experience.
 
-## Learn more
-
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [Framer Motion](https://www.framer.com/docs/) - the official Framer Motion documentation
-- [MDX](https://mdxjs.com/) - the official MDX documentation
-- [Algolia Autocomplete](https://www.algolia.com/doc/ui-libraries/autocomplete/introduction/what-is-autocomplete/) - the official Algolia Autocomplete documentation
-- [FlexSearch](https://github.com/nextapps-de/flexsearch) - the official FlexSearch documentation
-- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) - the official Zustand documentation
+## Contact
+For any questions or feedback, please contact Mario Kavouras at mario@sick.email.

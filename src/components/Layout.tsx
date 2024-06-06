@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Navigation } from '@/components/Navigation'
-import Logo from '@/images/ccp_logo.png'
+import Logo from '@/images/logos/ccp_logo.png'
 import Image from 'next/image'
 import { type Section, SectionProvider } from '@/components/SectionProvider'
 

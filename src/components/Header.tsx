@@ -9,7 +9,7 @@ import {
 import { useMobileNavigationStore } from '@/components/MobileNavigation'
 import { MobileSearch, Search } from '@/components/Search'
 import { ThemeToggle } from '@/components/ThemeToggle'
-import Logo from '@/images/ccp_logo.png'
+import Logo from '@/images/logos/ccp_logo.png'
 import Image from 'next/image'
 
 function TopLevelNavItem({
