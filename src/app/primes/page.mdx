@@ -1,0 +1,40 @@
+export const metadata = {
+  title: 'Print All Prime Numbers in a Given Range',
+  description:
+    'Given a range, print all the prime numbers within that range.',
+}
+
+# Instructions
+
+Write a function that prints all the prime numbers within a given range. A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+---
+
+<Row>
+  <Col>
+    <p>The example solution provided demonstrates a function called <code>printPrimes</code> that prints all the prime numbers within a given range. The function uses a loop to check each number in the range and determine if it is prime by checking for divisors.</p>
+  </Col>
+  <Col>
+
+    ```javascript {{ title: "Print Prime Numbers" }}
+      const printPrimes = (start, end) => {
+        const isPrime = (num) => {
+          if (num <= 1) return false;
+          for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+          }
+          return true;
+        };
+
+        for (let i = start; i <= end; i++) {
+          if (isPrime(i)) {
+            console.log(i);
+          }
+        }
+      };
+
+      // Example usage:
+      printPrimes(0, 10); // Output: 2, 3, 5, 7
+    ```
+  </Col>
+</Row>

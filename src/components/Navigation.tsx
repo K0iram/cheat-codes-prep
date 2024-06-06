@@ -242,6 +242,8 @@ export const navigation: Array<NavGroup> = [
       { title: 'De-duplicate a String', href: '/dedup' },
       { title: 'Palindrome', href: '/palindrome' },
       { title: 'Fibonacci', href: '/fibonacci' },
+      { title: 'Maximum Subarray', href: '/max-sub' },
+      { title: 'Prime Numbers', href: '/primes' },
     ],
   }
 ]
