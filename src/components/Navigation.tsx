@@ -249,7 +249,15 @@ export const navigation: Array<NavGroup> = [
       { title: 'Find All Combinations', href: '/all-combinations' },
       { title: 'Maximize Stock Profit', href: '/max-profit' },
     ],
-  }
+  },
+  {
+    title: 'Resources',
+    links: [
+      { title: 'Star Method', href: '/star-method' },
+      { title: 'Practice Questions', href: '/questions' },
+      { title: 'Helpful Links', href: '/links' },
+    ],
+  },
 ]
 
 export function Navigation(props: React.ComponentPropsWithoutRef<'nav'>) {
