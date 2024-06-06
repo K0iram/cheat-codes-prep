@@ -1,0 +1,41 @@
+export const metadata = {
+  title: 'Find the nth Fibonacci Number',
+  description:
+    'Given a number n, return the nth number in the Fibonacci sequence.',
+}
+
+# Instructions
+
+Write a function that returns the nth number in the Fibonacci sequence. The Fibonacci sequence is defined as follows:
+- F(0) = 0
+- F(1) = 1
+- F(n) = F(n-1) + F(n-2) for n > 1
+
+---
+
+<Row>
+  <Col>
+    <p>The example solution provided demonstrates a function called <code>fibonacci</code> that returns the nth number in the Fibonacci sequence. The function uses a loop to calculate the sequence iteratively, storing the previous two numbers and updating them as it progresses through the sequence.</p>
+  </Col>
+  <Col>
+
+    ```javascript {{ title: "Find Fibonacci" }}
+      const fibonacci = (n) => {
+        if (n < 0) return null;
+        if (n === 0) return 0;
+        if (n === 1) return 1;
+
+        let a = 0, b = 1, i = 2;
+
+        while (i <= n) {
+          let temp = a + b;
+          a = b;
+          b = temp;
+          i++;
+        }
+
+        return b;
+      }
+    ```
+  </Col>
+</Row>

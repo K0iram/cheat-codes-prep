@@ -241,6 +241,7 @@ export const navigation: Array<NavGroup> = [
     links: [
       { title: 'De-duplicate a String', href: '/dedup' },
       { title: 'Palindrome', href: '/palindrome' },
+      { title: 'Fibonacci', href: '/fibonacci' },
     ],
   }
 ]
