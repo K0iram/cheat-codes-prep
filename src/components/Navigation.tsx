@@ -244,6 +244,10 @@ export const navigation: Array<NavGroup> = [
       { title: 'Fibonacci', href: '/fibonacci' },
       { title: 'Maximum Subarray', href: '/max-sub' },
       { title: 'Prime Numbers', href: '/primes' },
+      { title: 'Merge Sorted Arrays', href: '/merge-sorted' },
+      { title: 'FizzBuzz', href: '/fizzbuzz' },
+      { title: 'Find All Combinations', href: '/all-combinations' },
+      { title: 'Maximize Stock Profit', href: '/max-profit' },
     ],
   }
 ]

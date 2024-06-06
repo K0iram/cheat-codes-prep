@@ -1,0 +1,63 @@
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'Maximize Stock Profit',
+  description:
+    'Given an array of stock prices, return the maximum profit from one purchase and one sale of one share of stock.',
+}
+
+<HeroPattern/>
+# Maximize Stock Profit
+---
+## Instructions
+
+Write an efficient function that takes an array of stock prices and returns the best profit that could be made from one purchase and one sale of one share of stock.
+
+---
+## Examples
+
+Here are a few examples to illustrate how the `maxProfit` function works:
+
+### Example 1
+**Input:** <code>stockPrices = [10, 7, 5, 8, 11, 9]</code>
+**Output:** <code>6</code> (buy at 5, sell at 11)
+
+### Example 2
+**Input:** <code>stockPrices = [7, 1, 5, 3, 6, 4]</code>
+**Output:** <code>5</code> (buy at 1, sell at 6)
+
+### Example 3
+**Input:** <code>stockPrices = [7, 6, 4, 3, 1]</code>
+**Output:** <code>0</code> (no profit possible)
+
+---
+## Solution
+
+<Row>
+  <Col>
+    <p>The example solution provided demonstrates a function called <code>maxProfit</code> that returns the maximum profit from one purchase and one sale of one share of stock. The function iterates through the array, keeping track of the minimum price seen so far and the maximum profit that can be achieved.</p>
+  </Col>
+  <Col>
+
+    ```javascript {{ title: "Maximize Stock Profit" }}
+      const maxProfit = (stockPrices) => {
+        if (stockPrices.length < 2) {
+          throw new Error('At least two prices are required to calculate profit.');
+        }
+
+        let minPrice = stockPrices[0];
+        let maxProfit = 0;
+
+        for (let i = 1; i < stockPrices.length; i++) {
+          const currentPrice = stockPrices[i];
+          const potentialProfit = currentPrice - minPrice;
+
+          maxProfit = Math.max(maxProfit, potentialProfit);
+          minPrice = Math.min(minPrice, currentPrice);
+        }
+
+        return maxProfit;
+      }
+    ```
+  </Col>
+</Row>

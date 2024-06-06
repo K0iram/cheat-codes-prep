@@ -1,0 +1,84 @@
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'FizzBuzz',
+  description:
+    'Given a start and end number, print "Fizz" if divisible by 3, "Buzz" if divisible by 5, "FizzBuzz" if divisible by both, and the number if divisible by neither.',
+}
+
+<HeroPattern/>
+# FizzBuzz Challenge
+---
+## Instructions
+
+Write a function that accepts a start and end number and prints:
+- <code>Fizz</code> if divisible by 3
+- <code>Buzz</code> if divisible by 5
+- <code>FizzBuzz</code> if divisible by both 3 and 5
+- The current number if divisible by neither
+
+---
+## Examples
+
+Here are a few examples to illustrate how the `fizzbuzz` function works:
+
+### Example 1
+**Input:** <code>start = 0, end = 5</code>
+**Output:** <code>['FizzBuzz', 1, 2, 'Fizz', 4, 'Buzz']</code>
+
+### Example 2
+**Input:** <code>start = 10, end = 15</code>
+**Output:** <code>['Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']</code>
+
+---
+## Solution
+
+<Row>
+  <Col>
+    <p>The example solution provided demonstrates a function called <code>fizzbuzz</code> that returns an array of results for each number in the range from start to end. The function checks each number and appends the appropriate string or number to the result array.</p>
+  </Col>
+  <Col>
+
+    ```javascript {{ title: "FizzBuzz" }}
+      const fizzbuzz = (start, end) => {
+        const result = [];
+        for (let i = start; i <= end; i++) {
+          if (i % 3 === 0 && i % 5 === 0) {
+            result.push('FizzBuzz');
+          } else if (i % 3 === 0) {
+            result.push('Fizz');
+          } else if (i % 5 === 0) {
+            result.push('Buzz');
+          } else {
+            result.push(i);
+          }
+        }
+        return result;
+      }
+    ```
+  </Col>
+</Row>
+<Row>
+  <Col>
+    <p>In this example, the function is implemented using a recursive approach.</p>
+  </Col>
+  <Col>
+    ```javascript {{ title: "FizzBuzz Recursive" }}
+      const fizzbuzzRecursive = (start, end, result = []) => {
+        if (start > end) return result;
+
+        if (start % 3 === 0 && start % 5 === 0) {
+          result.push('FizzBuzz');
+        } else if (start % 3 === 0) {
+          result.push('Fizz');
+        } else if (start % 5 === 0) {
+          result.push('Buzz');
+        } else {
+          result.push(start);
+        }
+
+        return fizzbuzzRecursive(start + 1, end, result);
+      }
+    ```
+  </Col>
+</Row>

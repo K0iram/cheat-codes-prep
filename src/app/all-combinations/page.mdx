@@ -1,0 +1,65 @@
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'Find All Combinations',
+  description:
+    'Given an array of arrays, return all possible combinations using one element from each internal array.',
+}
+
+<HeroPattern/>
+# Find All Combinations
+---
+## Instructions
+
+Write a function that accepts an array of arrays and prints all the possible combinations using one element from each internal array.
+
+---
+## Examples
+
+Here are a few examples to illustrate how the `allCombinations` function works:
+
+### Example 1
+**Input:** <code>[['dog'], ['cat', 'fish']]</code>
+
+**Output:** <code>[['dog', 'cat'], ['dog', 'fish']]</code>
+
+### Example 2
+**Input:** <code>[['a', 'b'], ['c', 'd'], ['e', 'f']]</code>
+
+**Output:** <code>[['a', 'c', 'e'], ['a', 'c', 'f'], ['a', 'd', 'e'], ['a', 'd', 'f'], ['b', 'c', 'e'], ['b', 'c', 'f'], ['b', 'd', 'e'], ['b', 'd', 'f']]</code>
+
+---
+## Solution
+
+<Row>
+  <Col>
+    <p>The example solution provided demonstrates a function called <code>allCombinations</code> that returns all possible combinations using one element from each internal array. The function uses recursion to build the combinations.</p>
+  </Col>
+  <Col>
+
+    ```javascript {{ title: "Find All Combinations" }}
+      const allCombinations = (arrays) => {
+        if (arrays.length === 0) return [[]];
+
+        // Destructure the first array and the rest of the arrays
+        const [first, ...rest] = arrays;
+
+        // Recursively find combinations for the rest of the arrays
+        const combinationsWithoutFirst = allCombinations(rest);
+
+        const allCombinationsResult = [];
+
+        // Iterate over each element in the first array
+        for (const value of first) {
+          // For each combination found in the rest of the arrays
+          for (const combination of combinationsWithoutFirst) {
+            // Add the current element from the first array to the combination
+            allCombinationsResult.push([value, ...combination]);
+          }
+        }
+
+        return allCombinationsResult;
+      }
+    ```
+  </Col>
+</Row>

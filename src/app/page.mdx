@@ -10,37 +10,19 @@ export const metadata = {
 
 <HeroPattern />
 
-# Javascript Cheat Codes
+# Cheat Codes Prep
 ---
 
 ### Purpose of this App
 
 This app is designed to help you prepare for JavaScript-based interviews by providing examples of interview questions that have been asked in the past. It aims to give you a comprehensive understanding of the types of questions you might encounter and how to approach them effectively.
 
-### Example Interview Questions
+### About Me
 
-#### Question 1: Explain event delegation in JavaScript.
-Event delegation is a technique involving event propagation to handle events at a higher level in the DOM than the element on which the event originated. This is particularly useful for handling events on dynamically added elements.
+My name is Mario Kavouras, and I am a Frontend Software Engineer with over 6 years of experience. Throughout my career, I've specialized in developing responsive, user-centric interfaces and leading innovative software projects. My journey in the tech industry has been driven by a passion for creating seamless user experiences and a commitment to continuous learning.
 
-```javascript
-document.getElementById('parent').addEventListener('click', function(event) {
-  if (event.target && event.target.matches('button.className')) {
-    console.log('Button clicked!');
-  }
-});
-```
+Having worked on various projects, from developing a peer-to-peer recognition app to optimizing e-commerce sites, I've encountered numerous technical challenges and interview scenarios. These experiences have equipped me with a deep understanding of what it takes to succeed in technical interviews.
 
-#### Question 2: What is a closure in JavaScript?
-A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope.
+I created this website to share my knowledge and help others navigate the often daunting process of preparing for JavaScript-based interviews. By providing a collection of common interview questions and detailed explanations, I hope to empower aspiring developers to approach their interviews with confidence and clarity.
 
-```javascript
-function outerFunction() {
-  let outerVariable = 'I am from outer scope';
-  return function innerFunction() {
-    console.log(outerVariable);
-  };
-}
-
-const closureFunction = outerFunction();
-closureFunction(); // Output: I am from outer scope
-```
+Thank you for visiting, and I hope you find these resources helpful in your journey to becoming a successful software engineer.
