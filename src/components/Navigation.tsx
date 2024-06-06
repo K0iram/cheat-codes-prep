@@ -239,7 +239,8 @@ export const navigation: Array<NavGroup> = [
   {
     title: 'Challenges',
     links: [
-      { title: 'De-duplicate an array', href: '/dedup' },
+      { title: 'De-duplicate a String', href: '/dedup' },
+      { title: 'Palindrome', href: '/palindrome' },
     ],
   }
 ]
