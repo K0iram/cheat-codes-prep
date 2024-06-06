@@ -8,36 +8,39 @@ export const metadata = {
     'Learn everything there is to know about the Protocol API and integrate Protocol into your product.',
 }
 
-export const sections = [
-  { title: 'Problem', id: 'problem' },
-  { title: 'Solution', id: 'solution' },
-]
-
 <HeroPattern />
 
-# API Documentation
+# Javascript Cheat Codes
+---
 
-Use the Protocol API to access contacts, conversations, group messages, and more and seamlessly integrate your product into the workflows of dozens of devoted Protocol users. {{ className: 'lead' }}
+### Purpose of this App
 
-<div className="not-prose mb-16 mt-6 flex gap-3">
-  <Button href="/quickstart" arrow="right">
-    <>Quickstart</>
-  </Button>
-  <Button href="/sdks" variant="outline">
-    <>Explore SDKs</>
-  </Button>
-</div>
+This app is designed to help you prepare for JavaScript-based interviews by providing examples of interview questions that have been asked in the past. It aims to give you a comprehensive understanding of the types of questions you might encounter and how to approach them effectively.
 
-## Getting started {{ anchor: false }}
+### Example Interview Questions
 
-To get started, create a new application in your [developer settings](#), then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our [integrations directory](#) to reach the Protocol community. {{ className: 'lead' }}
+#### Question 1: Explain event delegation in JavaScript.
+Event delegation is a technique involving event propagation to handle events at a higher level in the DOM than the element on which the event originated. This is particularly useful for handling events on dynamically added elements.
 
-<div className="not-prose">
-  <Button href="/sdks" variant="text" arrow="right">
-    <>Get your API key</>
-  </Button>
-</div>
+```javascript
+document.getElementById('parent').addEventListener('click', function(event) {
+  if (event.target && event.target.matches('button.className')) {
+    console.log('Button clicked!');
+  }
+});
+```
 
-<Guides />
+#### Question 2: What is a closure in JavaScript?
+A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope.
 
-<Resources />
+```javascript
+function outerFunction() {
+  let outerVariable = 'I am from outer scope';
+  return function innerFunction() {
+    console.log(outerVariable);
+  };
+}
+
+const closureFunction = outerFunction();
+closureFunction(); // Output: I am from outer scope
+```
